@@ -18,7 +18,7 @@ Note: You should name your program for this ﬁrst task as “task1_StudentID.py
   
   
   
-  Task 2: Building a Class for Data Analysis
+# Task 2: Building a Class for Data Analysis
 The second task is about collating the required data for analysis. The main task is to produce a number of statistics for the two groups of children transcripts. These statistics are those that might serve as good indicators for distinguishing between the children with SLI and the typically developed (TD) children.
 The statistics for each of child transcript that we are interested in are: • Length of the transcript — indicated by the number of statements • Size of the vocabulary — indicated by the number of unique words • Number of repetition for certain words or phrases — indicated by the CHAT symbol [/] • Number of retracing for certain words or phrases — indicated by the CHAT symbol [//] • Number of grammatical errors detected — indicated by the CHAT symbol [*]3 • Number of pauses made — indicated by the CHAT symbol (.)
 Note: Since the length of each child transcript is measured by the number of statements, the end of each statement can be determined based on the following punctuation marks: either a full stop ‘.’, a question mark ‘?’, or an exclamation mark ‘!’.
@@ -27,7 +27,7 @@ Hint: You would construct at least one object of this analyser class for each ch
 Note: You should name your program for this second task as “task2_StudentID.py”.
 
 
-Task 3: Building a Class for Data Visualisation
+# Task 3: Building a Class for Data Visualisation
 In the last task, you will implement a class to visualise the statistics collected in Section 2.3 (Task 2) as some form of graphs. The implementation of this visualiser class should make use of the external Python packages, such as NumPy, SciPy, Pandas, and/or Matplotlib in order to create the suitable graphs for comparing the statistics collected for the two groups of children transcripts. (We are suggesting bar charts here; you may choose any other types of graph that deemed appropriate.)
 The implementation of this visualiser class should include the following methods (you may create additional methods if needed):
 • __init__(self, data): This is the constructor required for creating instances of this class. This method should take as an argument a list that contains all the statistics to be visualised and store them in an appropriate structure. Your choice of data type or data structure should at least allow you to represent the statistics in a tabular format, where the columns denote the statistic types and the rows denote the statistic counts of each child transcript. • compute_averages(self): This method returns the average or mean of the six statistics for each child group (i.e. both the SLI and TD groups). • visualise_statistics(self): This method should construct the suitable graph(s) to demonstrate the mean diﬀerence between the two groups (SLI vs.TD) for each of the six statistics, for comparison purposes. (You may construct more than one graph if you think that is the best way to present the statistics.)
